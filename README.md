@@ -3,10 +3,15 @@
 DSC160 Data Science and the Arts - Final Project - Generative Arts - Spring 2020
 
 Project Team Members: 
+
 Yuxi Luo, yul884@ucsd.edu
+
 Emily Kwan, ekwan@ucsd.edu
+
 Ittoop Shinu Shibu, ishibu@ucsd.edu
+
 Pratyush Juneja, pjuneja@ucsd.edu
+
 Eric Yu, ery010@ucsd.edu 
 
 ## Abstract
@@ -22,7 +27,7 @@ In class, we learned about some technical GAN approaches to generating images. F
 A lot of our challenges arise from trying to work as a team in  a very uncertain time. However on the technical side, lack of knowledge in this very new field might create some interesting challenges initially. We also believe that the size of the dataset might play a part, in the sense we may not have an optimum number of images required to get the result we are aiming for, but we may try analysis on different subsets to see how our GAN behaves. Since, this is such a new topic for us, a lot of our challenges are going to revolve around finding out what our challenges would be but makes for an interesting project.
 Finally, our results will be the final series of images generated as well as an analysis of the intermediate images generated throughout the generative process presented in a Jupyter notebook.
 
-Sources we plan on using:
+References we plan on using:
 
 https://machinelearningmastery.com/how-to-evaluate-generative-adversarial-networks/
 
