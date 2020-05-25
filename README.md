@@ -23,9 +23,13 @@ A lot of our challenges arise from trying to work as a team in  a very uncertain
 Finally, our results will be the final series of images generated as well as an analysis of the intermediate images generated throughout the generative process presented in a Jupyter notebook.
 
 Sources we plan on using:
+
 https://machinelearningmastery.com/how-to-evaluate-generative-adversarial-networks/
+
 https://github.com/gsurma/image_generator
+
 https://medium.com/@hannahfarrugia/creating-a-game-character-from-a-generative-adverserial-network-gan-fb3188af369b 
+
 https://github.com/Zhenye-Na/pokemon-gan
 
 
