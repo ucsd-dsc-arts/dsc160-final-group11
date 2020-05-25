@@ -1,29 +1,33 @@
-# Project Title
+# Generating Characters from Cartoon Images
 
 DSC160 Data Science and the Arts - Final Project - Generative Arts - Spring 2020
 
 Project Team Members: 
-- Firstname Lastname1, name1@ucsd.edu
-- Firstname Lastname2, name2@ucsd.edu
-- Firstname Lastname3, name3@ucsd.edu
-- Firstname Lastname4, name4@ucsd.edu
-- Firstname Lastname5, name5@ucsd.edu
+Yuxi Luo, yul884@ucsd.edu
+Emily Kwan, ekwan@ucsd.edu
+Ittoop Shinu Shibu, ishibu@ucsd.edu
+Pratyush Juneja, pjuneja@ucsd.edu
+Eric Yu, ery010@ucsd.edu 
 
 ## Abstract
 
-(10 points) 
+Our concept for a generative art project is implementing a deep learning approach to create new instances of characters from media using existing samples. Specifically, we can take data-sets consisting of images of characters from well-known games, cartoons, or movies and use neural networks to output images of newly-created characters not from the original data-set. Typically, this method is done using generative adversarial networks (GANs), which consists of two “competing” networks, a generator and a discriminator. We plan to implement StyleGAN (a modified architecture of GANs), to experiment with the data. We will also need techniques for scraping, cleaning, and exploring our data-sets. With multi-channel image data, we may also need to perform some preprocessing to ensure that our pipeline’s computational requirements are reasonable. Neural networks are known to be computationally expensive when used with large image data-sets, so we may have to modify our data (resize, threshold, etc.) to make it work in a reasonable amount of time/GPU resources. An example of this type of project has been done previously with a Pokemon image data-set: How To Create Unique Pokémon Using GANs. 
 
-For the project proposal, please write a short abstact addressing the questions below. You need to replace the entire contents of this section with one to two paragraphs addressing the following:
+For training data, we plan to use images of characters from games or cartoons (for example, the Pokemon data-set). The hope is that the network we choose is robust (and efficient) enough to generate instances of characters that remotely resemble any of the examples from the training set. Ideally, we would like to see some images of characters that possess qualities from different samples from the training data, but are unique instances not seen in the data source.
 
-- What is your concept for a generative art project? 
-- What methods/networks/techniques will you employ (include links to technical precedents/code bases)
-- What training data (if any) will you use for your project? 
-- What kind of results do you hope that your system will produce?
-- How will you present your result/what form will your output take?
-- What if any challenges to you think may arise as you are working with this?
-- How are you expanding on topics we have covered in class? 
-- Why is it interesting? (personally, culturally, politically, other)
-- List three papers / art projects that are references for this work.
+What makes this interesting is that cartoon characters are something we have all grown up with. We all have memories associated with Tom and Jerry or Pokemon etc. that make it easier to relate to a simpler time. Using concepts learned in class, we thought it best to recreate a version of our childhood memories. Viewing this intersection from a growth stand-point makes it seem really challenging and we all felt that this was a great use of our time. 
+
+In class, we learned about some technical GAN approaches to generating images. For our final project, we plan to utilize some of the skills taught not to recreate classical artworks, but rather focus on generating cartoon illustrations. We want to be able to test GAN capabilities in order to see how effective it will be in generating different mediums of illustration. In addition to generating images, we will implore strategies and techniques such as inception score, nearest neighbors, and F1 score to determine the quality of the generated image.
+
+A lot of our challenges arise from trying to work as a team in  a very uncertain time. However on the technical side, lack of knowledge in this very new field might create some interesting challenges initially. We also believe that the size of the dataset might play a part, in the sense we may not have an optimum number of images required to get the result we are aiming for, but we may try analysis on different subsets to see how our GAN behaves. Since, this is such a new topic for us, a lot of our challenges are going to revolve around finding out what our challenges would be but makes for an interesting project.
+Finally, our results will be the final series of images generated as well as an analysis of the intermediate images generated throughout the generative process presented in a Jupyter notebook.
+
+Sources we plan on using:
+https://machinelearningmastery.com/how-to-evaluate-generative-adversarial-networks/
+https://github.com/gsurma/image_generator
+https://medium.com/@hannahfarrugia/creating-a-game-character-from-a-generative-adverserial-network-gan-fb3188af369b 
+https://github.com/Zhenye-Na/pokemon-gan
+
 
 ## Data and Model
 
