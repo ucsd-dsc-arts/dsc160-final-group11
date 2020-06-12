@@ -1,0 +1,5 @@
+tensorflow-gpu==1.15
+pandas
+numpy
+cv2
+Pillow
