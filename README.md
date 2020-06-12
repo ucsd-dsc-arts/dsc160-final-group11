@@ -76,10 +76,8 @@ Images from Tick 15
 ![Tick15](https://github.com/ucsd-dsc-arts/dsc160-final-group11/blob/master/results/dsc160%20gan%20results/fakes011725.png)
 Images from Tick 17
 ![Tick15](https://github.com/ucsd-dsc-arts/dsc160-final-group11/blob/master/results/dsc160%20gan%20results/fakes011785.png)
-Below we can see the different ticks and the final gifs which shows our generated image progress.
 
-Gif 
-
+Below we can see a final gif which shows our generated image progress.
 ![Generated Images gif](https://github.com/ucsd-dsc-arts/dsc160-final-group11/blob/master/results/dsc160%20gan%20results/ezgif.com-optimize.gif)
 
 
