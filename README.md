@@ -30,9 +30,9 @@ Finally, our results will be the final series of images generated as well as an 
 
 ## Data and Model
 
-Our approach involved implementing a generative adversarial network (GAN) to generate new images. A GAN consists of a pair of deep neural networks: a generator and discriminator. The general approach of a GAN is to train the generator to create new samples from the training data, and train the discriminator to differentiate between true samples and generated samples. The original literature (NIPS manuscript) can be found here: https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf. For our project, we implemented an extension to the original GAN, the StyleGAN (https://github.com/NVlabs/stylegan). Specifically, we used a pre-trained StyleGAN instead of training a GAN from scratch, which required the new input data to have the same structure as the data the model was previously trained on. This is known as transfer learning, which involves taking certain layers of a model that was trained on an arbitrary data-set, and then training the top (last) layers on our specific data-set. This significantly reduces the computational workload and allows us to take advantage of knowledge that is “learned” by the model from the original training session. The StyleGAN documentation notes that a significant amount of time on the order of days was required to train StyleGAN from scratch using graphics cards superior to the ones we have access to (NVIDIA GTX 1080), so it was more economical to take advantage of a pre-trained model through transfer-learning. We used a version of the StyleGAN that was trained on images of children’s drawings. 
+Our approach involved implementing a generative adversarial network (GAN) to generate new images. A GAN consists of a pair of deep neural networks: a generator and discriminator. The general approach of a GAN is to train the generator to create new samples from the training data, and train the discriminator to differentiate between true samples and generated samples. The original literature (NIPS manuscript) can be found here: https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf. For our project, we implemented an extension to the original GAN, the [StyleGAN] (https://github.com/NVlabs/stylegan). Specifically, we used a pre-trained StyleGAN instead of training a GAN from scratch, which required the new input data to have the same structure as the data the model was previously trained on. This is known as transfer learning, which involves taking certain layers of a model that was trained on an arbitrary data-set, and then training the top (last) layers on our specific data-set. This significantly reduces the computational workload and allows us to take advantage of knowledge that is “learned” by the model from the original training session. The StyleGAN documentation notes that a significant amount of time on the order of days was required to train StyleGAN from scratch using graphics cards superior to the ones we have access to (NVIDIA GTX 1080), so it was more economical to take advantage of a pre-trained model through transfer-learning. We used a version of the StyleGAN that was trained on images of children’s drawings. 
 
-We used images of existing Pokémon characters for our training data. Our data-set was retrieved from a Kaggle source (https://www.kaggle.com/kvpratama/pokemon-images-dataset), consisting of 819 images that are 256 x 256 pixels with 4 channels (RGB and alpha). Each image is a unique Pokémon in a white square container, which were further processed to meet the StyleGAN’s parameter expectations (512 x 512 pixels, 3 color channels)
+We used images of existing Pokémon characters for our training data. Our data-set was retrieved from a [Kaggle source] (https://www.kaggle.com/kvpratama/pokemon-images-dataset), consisting of 819 images that are 256 x 256 pixels with 4 channels (RGB and alpha). Each image is a unique Pokémon in a white square container, which were further processed to meet the StyleGAN’s parameter expectations (512 x 512 pixels, 3 color channels)
 
 ## Code
 
@@ -104,19 +104,19 @@ When running through the training scripts, it is worth noting that one must make
 
 ## Reference
 
-https://machinelearningmastery.com/how-to-evaluate-generative-adversarial-networks/
-https://medium.com/@hannahfarrugia/creating-a-game-character-from-a-generative-adverserial-network-gan-fb3188af369b 
-https://github.com/Zhenye-Na/pokemon-gan
-https://www.kaggle.com/brkurzawa/151-pokemon-gan
-https://nanonets.com/blog/stylegan-got/
-https://www.kaggle.com/kvpratama/pokemon-images-dataset#101.png
-https://github.com/gsurma/image_generator
-https://github.com/mnicnc404/CartoonGan-tensorflow
-https://medium.com/@jonathan_hui/gan-how-to-measure-gan-performance-64b988c47732
-https://machinelearningmastery.com/how-to-evaluate-generative-adversarial-networks/
-https://github.com/roberttwomey/child-art/blob/master/stylegan-finetune.ipynb
-https://github.com/ak9250/stylegan-art/blob/master/styleganportraits.ipynb
-https://devopstar.com/2019/05/21/stylegan-pokemon-card-generator
-https://www.scienceopen.com/document_file/5de715d2-273c-443a-bb6b-9ea6f1414c51/ScienceOpen/112_Galanter.pdf
-https://towardsdatascience.com/how-to-create-unique-pok%C3%A9mon-using-gans-ea1cb6b6a5c2
+ - https://machinelearningmastery.com/how-to-evaluate-generative-adversarial-networks/
+ - https://medium.com/@hannahfarrugia/creating-a-game-character-from-a-generative-adverserial-network-gan-fb3188af369b 
+ - https://github.com/Zhenye-Na/pokemon-gan
+ - https://www.kaggle.com/brkurzawa/151-pokemon-gan
+ - https://nanonets.com/blog/stylegan-got/
+ - https://www.kaggle.com/kvpratama/pokemon-images-dataset#101.png
+ - https://github.com/gsurma/image_generator
+ - https://github.com/mnicnc404/CartoonGan-tensorflow
+ - https://medium.com/@jonathan_hui/gan-how-to-measure-gan-performance-64b988c47732
+ - https://machinelearningmastery.com/how-to-evaluate-generative-adversarial-networks/
+ - https://github.com/roberttwomey/child-art/blob/master/stylegan-finetune.ipynb
+ - https://github.com/ak9250/stylegan-art/blob/master/styleganportraits.ipynb
+ - https://devopstar.com/2019/05/21/stylegan-pokemon-card-generator
+ - https://www.scienceopen.com/document_file/5de715d2-273c-443a-bb6b-9ea6f1414c51/ScienceOpen/112_Galanter.pdf
+ - https://towardsdatascience.com/how-to-create-unique-pok%C3%A9mon-using-gans-ea1cb6b6a5c2
 
