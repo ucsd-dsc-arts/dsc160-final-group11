@@ -1,0 +1,2 @@
+Our data consisting of 819 pokemon images can be downloaded from:
+https://www.kaggle.com/kvpratama/pokemon-images-dataset
