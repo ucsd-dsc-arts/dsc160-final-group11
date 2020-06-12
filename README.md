@@ -65,6 +65,7 @@ Link each of these items to your .ipynb or .py files within this seection, and p
 
 Based on our work, and the results you can see below, each tick consists of one round of training. We trained our images for a total of 17 ticks (~19 hours) to try and achieve an optimal result. The most noticeable difference we observed was that the more we trained the more the images lacked in color vibrancy. This was because we believed the dataset may have overfit initially, or that before the initial training, the data was more of a copy of the original training data and towards later ticks it turned into a generative form that was mainly being generated on an RGB scale.
 Combining our final ticks we can see all our generated images and a final gif of their progression. The main issues throughout this project and the results were the sheer volume of training data. The training data was also very diverse, so we couldn’t get one “type” of Pokémon but just a series of characters that resembled the above.
+
 Images from Tick 1
 ![Tick1](https://github.com/ucsd-dsc-arts/dsc160-final-group11/blob/master/results/dsc160%20gan%20results/fakes011305.png)
 Images from Tick 5
@@ -76,8 +77,7 @@ Images from Tick 15
 Images from Tick 17
 ![Tick15](https://github.com/ucsd-dsc-arts/dsc160-final-group11/blob/master/results/dsc160%20gan%20results/fakes011785.png)
 Below we can see the different ticks and the final gifs which shows our generated image progress.
-All Images together
-![Generated Images](https://github.com/ucsd-dsc-arts/dsc160-final-group11/blob/master/results/dsc160%20gan%20results/sgan_sample.png)
+
 Gif 
 ![Generated Images gif](https://github.com/ucsd-dsc-arts/dsc160-final-group11/blob/master/results/dsc160%20gan%20results/ezgif.com-optimize.gif)
 
