@@ -1,5 +1,0 @@
-tensorflow-gpu
-pandas
-numpy
-cv2
-Pillow
