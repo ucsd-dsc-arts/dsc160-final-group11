@@ -1,4 +1,4 @@
-tensorflow-gpu==1.15
+tensorflow-gpu
 pandas
 numpy
 cv2
