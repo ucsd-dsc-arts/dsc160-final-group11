@@ -79,6 +79,7 @@ Images from Tick 17
 Below we can see the different ticks and the final gifs which shows our generated image progress.
 
 Gif 
+
 ![Generated Images gif](https://github.com/ucsd-dsc-arts/dsc160-final-group11/blob/master/results/dsc160%20gan%20results/ezgif.com-optimize.gif)
 
 
